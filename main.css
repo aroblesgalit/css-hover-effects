@@ -37,13 +37,14 @@ h1 {
     height: 280px;
     width: 220px;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .prod-1:hover,
 .prod-2:hover {
     -webkit-box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);   
     box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);
-    transition: all 0.3s ease-in-out;
 }
 
 .prod-1 .bg {
@@ -62,8 +63,9 @@ h1 {
     transform-origin: bottom center;
     top: -30%;
     left: -25%;
-    /* display: none; */
-    z-index: 2
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .prod-1 .bg .logo {
@@ -73,19 +75,19 @@ h1 {
     left: -25%;
     opacity: 0.8;
     z-index: 1;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .prod-1:hover .form {
     transform: rotate(30deg);
     top: -45%;
-    transition: all 0.3s ease-in-out;
 }
 
 .prod-1:hover .logo {
     width: 90%;
     left: 5%;
     bottom: 28%;
-    transition: all 0.3s ease-in-out;
 }
 
 .prod-1 .content {
@@ -98,6 +100,8 @@ h1 {
 .prod-1 .content img {
     z-index: 10;
     width: 76%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .prod-1 .content span {
@@ -128,6 +132,8 @@ h1 {
     color: #fff;
     background-color: rgb(17, 155, 219);
     transform: translateY(100%);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .prod-1 .content button:hover {
@@ -140,12 +146,10 @@ button:focus {
 
 .prod-1:hover .prod-img {
     width: 60%;
-    transition: all 0.3s ease-in-out;
 }
 
 .prod-1:hover button {
     transform: translateY(0);
-    transition: all 0.3s ease-in-out;
 }
 
 /* Product card 1 ends */
@@ -163,6 +167,8 @@ button:focus {
     z-index: 1;
     top: -60px;
     right: -50px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .prod-2 .r-arrow {
@@ -178,6 +184,8 @@ button:focus {
 .prod-2 .content {
     margin-top: 1rem;
     padding: 1rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
 }
 
 .prod-2 span,
@@ -202,12 +210,10 @@ button:focus {
     height: 500px;
     top: -100px;
     right: -100px;
-    transition: all 0.3s ease-in-out;
 }
 
 .prod-2:hover .content {
     color: #fff;
-    transition: all 0.3s ease-in-out;
 }
 
 /* Product card 2 ends */
