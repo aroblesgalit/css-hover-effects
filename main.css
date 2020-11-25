@@ -228,6 +228,34 @@ button:focus {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+
+.prod-3 .socials {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.prod-3 span[uk-icon*="icon"] {
+    transform: translateY(150%);
+    transition: all 0.2s ease-in-out;
+}
+
+.prod-3 span[uk-icon*="twitter"] {
+    transition-delay: 0.1s;
+}
+
+.prod-3 span[uk-icon*="instagram"] {
+    transition-delay: 0.2s;
+}
+
+.prod-3 span[uk-icon*="linkedin"] {
+    transition-delay: 0.3s;
+}
+
+.prod-3:hover span[uk-icon*="icon"] {
+    transform: translateY(0);
 }
 
 /* Product card 3 ends */
