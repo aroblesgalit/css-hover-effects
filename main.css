@@ -236,6 +236,42 @@ button:focus {
     position: relative;
 }
 
+.form-triangle-right-blue,
+.form-triangle-right-white {
+    height: 0;
+    width: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    right: 10px;
+    top: 90px;
+    opacity: 0.7;
+    
+}
+
+.form-triangle-right-blue {
+    border-right: 20px solid var(--blue);
+    transform: scale(2.8) translateX(100%);
+    
+}
+
+.form-triangle-right-white {
+    border-right: 20px solid #fff;
+    transform: scale(5) translateX(100%);
+}
+
+.prod-3:hover .form-triangle-right-blue {
+    transform: scale(2.8) translateX(0);
+    transition: all 0.3s ease-in-out;
+    transition-delay: 0.1s;
+}
+
+.prod-3:hover .form-triangle-right-white {
+    transform: scale(5) translateX(0);
+    transition: all 0.1s ease-in-out;
+    transition-delay: 0.1s;
+}
+
 .form-triangle-bottom-white,
 .form-triangle-bottom-blue {
     height: 0;
@@ -243,11 +279,11 @@ button:focus {
     border-top: 10px solid transparent;
     border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    transform: rotate(115deg) scale(0);
     position: absolute;
     bottom: -80px;
     left: 10px;
     opacity: 0.7;
+    transform: rotate(115deg) scale(0);
 }
 
 .form-triangle-bottom-white {
