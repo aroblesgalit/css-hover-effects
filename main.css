@@ -24,9 +24,8 @@ h1 {
 
 .products {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 1rem;
-    row-gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-gap: 1rem;
 }
 
 
@@ -252,23 +251,22 @@ button:focus {
 .form-triangle-right-blue {
     border-right: 20px solid var(--blue);
     transform: scale(2.8) translateX(100%);
-    
+    transition: all 0.1s ease-in-out;
 }
 
 .form-triangle-right-white {
     border-right: 20px solid #fff;
     transform: scale(5) translateX(100%);
+    transition: all 0.3s ease-in-out;
 }
 
 .prod-3:hover .form-triangle-right-blue {
     transform: scale(2.8) translateX(0);
-    transition: all 0.3s ease-in-out;
     transition-delay: 0.1s;
 }
 
 .prod-3:hover .form-triangle-right-white {
     transform: scale(5) translateX(0);
-    transition: all 0.1s ease-in-out;
     transition-delay: 0.1s;
 }
 
