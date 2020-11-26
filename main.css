@@ -231,6 +231,20 @@ button:focus {
     position: relative;
 }
 
+.prod-3 .name {
+    position: absolute;
+    left: 14px;
+    bottom: 36px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    transform: translateX(-120%);
+    transition: all 0.3s ease-in-out;
+}
+
+.prod-3:hover .name {
+    transform: translateX(0);
+}
+
 .prod-3 .socials {
     position: absolute;
     bottom: 10px;
