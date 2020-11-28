@@ -433,15 +433,15 @@ button:focus {
 /* Product card 5 begins */
 
 .prod-5 {
-    /* pointer-events: none; */
     height: 280px;
     width: 220px;
     transform: translateZ(0);
     transform-style: preserve-3d;
-    perspective: 1000px;
+    perspective: 600px;
 }
 
 .prod-5 .card {
+    pointer-events: none;
     height: 100%;
     width: 100%;
     border-radius: 0.625rem;
@@ -455,10 +455,10 @@ button:focus {
     text-align: center;
     transform: translateZ(0);
     transform-style: preserve-3d;
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
 }
 
-/* .card:after {
+.card:after {
     content: " ";
     position: absolute;
     width: 100%;
@@ -467,7 +467,7 @@ button:focus {
     left: 0;
     bottom: -50px;
     box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
-} */
+}
 
 .prod-5 .card .title {
     transform: translateZ(100px);
