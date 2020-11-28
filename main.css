@@ -427,3 +427,58 @@ button:focus {
 }
 
 /* Product card 4 ends */
+
+
+
+/* Product card 5 begins */
+
+.prod-5 {
+    /* pointer-events: none; */
+    height: 280px;
+    width: 220px;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.prod-5 .card {
+    height: 100%;
+    width: 100%;
+    border-radius: 0.625rem;
+    background-color: #f2f2f2;
+    overflow: hidden;
+    position: relative;
+    padding: 20px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    transition: all 0.2s ease;
+}
+
+/* .card:after {
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    border-radius: 50%;
+    left: 0;
+    bottom: -50px;
+    box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+} */
+
+.prod-5 .card .title {
+    transform: translateZ(100px);
+}
+
+.prod-5 .card .text {
+    transform: translateZ(50px);
+}
+
+.prod-5 .card .copy {
+    transform: translateZ(75px);
+}
+
+/* Product card 5 ends */
