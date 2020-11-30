@@ -31,7 +31,6 @@ h1 {
 
 
 /* Product card 1 begins */
-
 .prod-1,
 .prod-2,
 .prod-3 {
@@ -220,12 +219,10 @@ button:focus {
 .prod-2:hover .content {
     color: #fff;
 }
-
 /* Product card 2 ends */
 
 
 /* Product card 3 begins */
-
 .prod-3 {
     background-image: url("https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-size: cover;
@@ -348,12 +345,10 @@ button:focus {
 .prod-3:hover span[uk-icon*="icon"] {
     transform: translateY(0);
 }
-
 /* Product card 3 ends */
 
 
 /* Product card 4 begins */
-
 .prod-4 {
     height: 280px;
     width: 220px;
@@ -425,13 +420,11 @@ button:focus {
 .prod-4:hover .card {
     transform: rotateY(0);
 }
-
 /* Product card 4 ends */
 
 
 
 /* Product card 5 begins */
-
 .prod-5 {
     height: 280px;
     width: 220px;
@@ -482,5 +475,16 @@ button:focus {
     font-weight: 300;
     transform: translateZ(30px);
 }
-
 /* Product card 5 ends */
+
+
+
+/* Product card 6 begins */
+.prod-6 {
+    height: 280px;
+    width: 220px;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+/* Product card 6 ends */
