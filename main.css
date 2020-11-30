@@ -487,4 +487,41 @@ button:focus {
     transform-style: preserve-3d;
     perspective: 1000px;
 }
+
+.prod-6 .card {
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.625rem;
+    background-color: var(--blue);
+    color: #f2f2f2;
+    position: relative;
+    padding: 16px;
+    backface-visibility: hidden;
+    background-image: url("https://images.pexels.com/photos/4967469/pexels-photo-4967469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.prod-6 .border {
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 0.625rem;
+    transform: translateZ(30px);
+}
+
+.prod-6 p.name {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    transform: translateZ(60px) translateX(14px) translateY(-140px);
+}
+
+.prod-6 p.location {
+    font-weight: 300;
+    font-size: 0.825rem;
+    transform: translateZ(60px) translateX(14px) translateY(-154px);
+}
 /* Product card 6 ends */

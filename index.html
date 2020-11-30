@@ -104,6 +104,20 @@
         prod5.addEventListener("mouseleave", e => {
             card5.setAttribute("style", "transform: rotateY(0deg) rotateX(0deg)")
         })
+
+        // Product card 6
+        const prod6 = document.querySelector(".prod-6");
+        const card6 = prod6.querySelector(".card");
+        prod6.addEventListener("mousemove", e => {
+            const posx = e.offsetX;
+            const posy = e.offsetY;
+            const ax = (posx - 110) * .09;
+            const ay = -(posy - 140) * .07;
+            card6.setAttribute("style", `transform: rotateY(${ax}deg) rotateX(${ay}deg); -webkit-transform: rotateY(${ax}deg) rotateX(${ay}deg); -moz-transform: rotateY(${ax}deg) rotateX(${ay}deg);`);
+        })
+        prod6.addEventListener("mouseleave", e => {
+            card6.setAttribute("style", "transform: rotateY(0deg) rotateX(0deg)")
+        })
     </script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.9/dist/js/uikit.min.js"></script>
