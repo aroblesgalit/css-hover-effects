@@ -33,7 +33,8 @@ h1 {
 /* Product card 1 begins */
 .prod-1,
 .prod-2,
-.prod-3 {
+.prod-3,
+.prod-7 {
     background-color: #f2f2f2;
     border-radius: 0.625rem;
     overflow: hidden;
@@ -47,7 +48,8 @@ h1 {
 
 .prod-1:hover,
 .prod-2:hover,
-.prod-3:hover {
+.prod-3:hover,
+.prod-7:hover {
     -webkit-box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);   
     box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);
 }
@@ -505,6 +507,11 @@ button:focus {
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+.prod-6:hover .card {
+    -webkit-box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);   
+    box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);
+}
+
 .prod-6 .border {
     height: 100%;
     width: 100%;
@@ -525,3 +532,63 @@ button:focus {
     transform: translateZ(60px) translateX(14px) translateY(-154px);
 }
 /* Product card 6 ends */
+
+
+
+/* Product card 7 begins */
+.prod-7 {
+    background-image: url("https://images.pexels.com/photos/3560044/pexels-photo-3560044.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-position: center;
+}
+
+.prod-7 .card-bg {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.prod-7 .card-content {
+    transform: translateY(100px);
+    transition: all 0.3s ease-in-out;
+}
+
+.prod-7 h2 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    color: #f2f2f2;
+    margin-bottom: 0;
+}
+
+.prod-7 p {
+    font-weight: 300;
+    color: #f2f2f2;
+    font-size: 0.825rem;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+.prod-7 button {
+    padding: 10px;
+    width: 100px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    background-color: var(--blue);
+    color: #f2f2f2;
+}
+
+.prod-7:hover .card-bg {
+    opacity: 1;
+}
+
+.prod-7:hover .card-content {
+    transform: translateY(74px);
+}
+
+/* Product card 7 ends */
