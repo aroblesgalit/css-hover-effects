@@ -34,7 +34,8 @@ h1 {
 .prod-1,
 .prod-2,
 .prod-3,
-.prod-7 {
+.prod-7,
+.prod-8 {
     background-color: #f2f2f2;
     border-radius: 0.625rem;
     overflow: hidden;
@@ -49,7 +50,8 @@ h1 {
 .prod-1:hover,
 .prod-2:hover,
 .prod-3:hover,
-.prod-7:hover {
+.prod-7:hover,
+.prod-8:hover {
     -webkit-box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);   
     box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);
 }
@@ -590,5 +592,6 @@ button:focus {
 .prod-7:hover .card-content {
     transform: translateY(74px);
 }
-
 /* Product card 7 ends */
+
+
