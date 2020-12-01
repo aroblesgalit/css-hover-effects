@@ -595,3 +595,46 @@ button:focus {
 /* Product card 7 ends */
 
 
+
+/* Product card 8 begins */
+.prod-8 .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.prod-8 img {
+    transform: scale(1);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.prod-8:hover img {
+    transform: scale(2);
+}
+
+.prod-8 .info {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    padding: 20px;
+    text-align: center;
+    transform: translateY(35%);
+    transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.prod-8 h2 {
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+}
+
+.prod-8 p {
+    font-size: 0.825rem;
+    font-weight: 300;
+}
+
+.prod-8:hover .info {
+    transform: translateY(134%)
+}
+/* Product card 8 ends */
