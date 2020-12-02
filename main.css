@@ -691,7 +691,7 @@ button:focus {
 .prod-9 .info {
     height: 60px;
     width: 280px;
-    color: var(--blue);
+    color: #6e6e6e;
     padding: 6px 10px;
     transform: rotate(-90deg);
     transform-origin: 140px 140px;
@@ -700,7 +700,8 @@ button:focus {
     justify-content: space-between;
 }
 
-.prod-9 span {
+.prod-9 .socials span {
+    color: var(--blue);
     cursor: pointer;
 }
 
