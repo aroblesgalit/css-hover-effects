@@ -678,10 +678,13 @@ button:focus {
     color: #f2f2f2;
     background-color: var(--blue);
     transform: translateX(20px);
+    -webkit-box-shadow: 4px 0px 8px 4px rgba(0,0,0,0.6);   
+    box-shadow: 4px 0px 8px 4px rgba(0,0,0,0.6);
 }
 
 .prod-9:hover .back {
-
+    -webkit-box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);   
+    box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);
     transform: translateX(-20px);
 }
 
@@ -695,5 +698,13 @@ button:focus {
     position: absolute;
     display: flex;
     justify-content: space-between;
+}
+
+.prod-9 span {
+    cursor: pointer;
+}
+
+.prod-9 span:not(:last-child) {
+    margin-right: 4px;
 }
 /* Product card 9 ends */
