@@ -638,3 +638,62 @@ button:focus {
     transform: translateY(134%)
 }
 /* Product card 8 ends */
+
+
+
+/* Product card 9 begins */
+.prod-9 {
+    height: 280px;
+    width: 220px;
+    position: relative;
+}
+
+.prod-9 .front {
+    height: 100%;
+    width: 100%;
+    color: #6e6e6e;
+    background-color: rgb(89, 89, 94);
+    border-radius: 0.625rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.prod-9 .back {
+    width: 60px;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-radius: 0.625rem 0 0 0.625rem;
+    position: absolute;
+    transform: translateX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.prod-9:hover .front {
+    color: #f2f2f2;
+    background-color: var(--blue);
+    transform: translateX(20px);
+}
+
+.prod-9:hover .back {
+
+    transform: translateX(-20px);
+}
+
+.prod-9 .info {
+    height: 60px;
+    width: 280px;
+    color: var(--blue);
+    padding: 6px 10px;
+    transform: rotate(-90deg);
+    transform-origin: 140px 140px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+/* Product card 9 ends */
