@@ -658,6 +658,7 @@ button:focus {
     cursor: pointer;
     position: absolute;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     transform: translateX(0);
@@ -680,6 +681,19 @@ button:focus {
     transform: translateX(20px);
     -webkit-box-shadow: 4px 0px 8px 4px rgba(0,0,0,0.6);   
     box-shadow: 4px 0px 8px 4px rgba(0,0,0,0.6);
+}
+
+.prod-9 h2 {
+    font-size: 1.5rem;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    color: #6e6e6e;
+    margin: 16px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.prod-9:hover h2 {
+    color: #f2f2f2;
 }
 
 .prod-9:hover .back {
