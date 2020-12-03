@@ -725,3 +725,22 @@ button:focus {
     margin-right: 4px;
 }
 /* Product card 9 ends */
+
+
+/* Product card 10 begins */
+.prod-10 {
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+}
+
+.prod-10 path[fill] {
+    transition: all 1s ease-in-out;
+}
+
+@keyframes stroke-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+/* Product card 10 ends */
