@@ -381,33 +381,30 @@
         const prod10 = document.querySelector(".prod-10");
         const strokes = prod10.querySelectorAll('path[stroke]'); // all path nodes with stroke attr
         const fills = prod10.querySelectorAll('path[fill]'); // all path nodes with fill attr
+        let prod10Timeout;
         // Strokes
         for (let i = 0; i < strokes.length; i++) {
             strokes[i].style.strokeDasharray = strokes[i].getTotalLength();
             strokes[i].style.strokeDashoffset = strokes[i].getTotalLength();
         }
-        // Fills
-        fills.forEach(fill => fill.style.opacity = 0);
         // Mouse hover
-        prod10.addEventListener('mouseover', function () {
+        prod10.addEventListener('mouseenter', startAnim);
+        prod10.addEventListener('mouseleave', endAnim);
+        function startAnim() {
             let delay = 0;
             for (let i = 0; i < strokes.length; i++) {
                 strokes[i].style.animation = `stroke-anim 1s ease forwards ${delay}s`
                 delay += 0.1;
             }
-            setTimeout(() => {
+            prod10Timeout = setTimeout(() => {
                 fills.forEach(fill => fill.style.opacity = 1);
             }, 3000);
-        })
-        prod10.addEventListener('mouseout', () => {
-            for (let i = 0; i < strokes.length; i++) {
-                // card10[i].style.strokeDashoffset = 0;
-                // strokes[i].style.animation = `stroke-anim 1s ease-out backwards`;
-                strokes[i].style.animation = 'none';
-            }
+        }
+        function endAnim() {
+            clearTimeout(prod10Timeout);
+            strokes.forEach(stroke => stroke.style.animation = 'none');
             fills.forEach(fill => fill.style.opacity = 0);
-        })
-
+        }
 
     </script>
     <!-- UIkit JS -->
