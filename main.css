@@ -37,7 +37,8 @@ h1 {
 .prod-7,
 .prod-8,
 .prod-10,
-.prod-11 {
+.prod-11,
+.prod-12 {
     background-color: #f2f2f2;
     border-radius: 0.625rem;
     overflow: hidden;
@@ -55,7 +56,8 @@ h1 {
 .prod-7:hover,
 .prod-8:hover,
 .prod-10:hover,
-.prod-11:hover {
+.prod-11:hover,
+.prod-12:hover {
     -webkit-box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);   
     box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);
 }
@@ -816,3 +818,63 @@ button:focus {
     transform: translateY(90px);
 }
 /* Product card 11 ends */
+
+
+/* Product card 12 begins */
+.prod-12 {
+    background-image: url("https://images.pexels.com/photos/1755626/pexels-photo-1755626.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-size: cover;
+    background-position: center;
+}
+
+.prod-12 .content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+.prod-12:hover .content {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.prod-12 .border {
+    border-radius: 10px;
+    fill: transparent;
+    stroke-dasharray: 840;
+    stroke-dashoffset: 840;
+    stroke-width: 1px;
+    stroke: #fff;
+}
+
+.prod-12:hover .border {
+    animation: drawBorder 0.5s linear forwards;
+}
+
+.prod-12 .text {
+    color: #f2f2f2;
+    position: absolute;
+    padding: 20px;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.prod-12:hover .text {
+    opacity: 1;
+}
+
+@keyframes drawBorder {
+    to {
+        stroke-dasharray: 840;
+        stroke-dashoffset: 0;
+    }
+}
+/* Product card 12 ends */
