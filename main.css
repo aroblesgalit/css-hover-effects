@@ -38,7 +38,8 @@ h1 {
 .prod-8,
 .prod-10,
 .prod-11,
-.prod-12 {
+.prod-12,
+.prod-13 {
     background-color: #f2f2f2;
     border-radius: 0.625rem;
     overflow: hidden;
@@ -57,7 +58,8 @@ h1 {
 .prod-8:hover,
 .prod-10:hover,
 .prod-11:hover,
-.prod-12:hover {
+.prod-12:hover,
+.prod-13:hover {
     -webkit-box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);   
     box-shadow: 0px 8px 27px 8px rgba(0,0,0,0.6);
 }
