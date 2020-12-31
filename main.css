@@ -880,3 +880,18 @@ button:focus {
     }
 }
 /* Product card 12 ends */
+
+
+/* Product card 13 begins */
+.prod-13 {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+    background-image: url("https://images.pexels.com/photos/5849003/pexels-photo-5849003.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    background-position: center;
+    background-size: cover;
+}
+
+.prod-13:hover {
+    transform: scale(1.1)
+}
+/* Product card 13 ends */
